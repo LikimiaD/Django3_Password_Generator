@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/generator.css' %}"/>
+</head>
+<body>
+    <h1>Simple <code>Password Generator</code></h1>
+    <form action = "password">
+        <div class="container">
+            <div class="control-group">
+            <label class="control control--checkbox">Uppercase
+                <input type="checkbox" name = "uppercase"/>
+                <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Numbers
+                <input type="checkbox" name = "numbers"/>
+                <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Special
+                <input type="checkbox" name = "special"/>
+                <div class="control__indicator"></div>
+            </label>
+            <div class="select">
+                <select name = "length">
+                <option value = "6" >6</option>
+                <option value = "7" >7</option>
+                <option value = "8" >8</option>
+                <option value = "9" >9</option>
+                <option value = "10" >10</option>
+                <option value = "11" >11</option>
+                <option value = "12" selected = "selected" >12</option>
+                <option value = "13" >13</option>
+                <option value = "14" >14</option>
+                <option value = "15" >15</option>
+                <option value = "16" >16</option>
+                <option value = "18" >18</option>
+                <option value = "20" >20</option>
+                <option value = "22" >22</option>
+                <option value = "24" >24</option>
+                <option value = "26" >26</option>
+                <option value = "28" >28</option>
+                <option value = "30" >30</option>
+                <option value = "32" >32</option>
+                <option value = "56" >56</option>
+                <option value = "64" >64</option>
+                <option value = "72" >72</option>
+                <option value = "96" >96</option>
+                <option value = "128" >128</option>
+                <option value = "256" >256</option>
+                </select>
+            </div>
+        <br><br>
+        <div class="buttons">
+            <button class="offset">Generate</button>
+        </div>
+        <br>
+    </form>
+</body>
+</html>
